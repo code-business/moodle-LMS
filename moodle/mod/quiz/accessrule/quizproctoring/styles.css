@@ -1,0 +1,67 @@
+#page-mod-quiz-attempt .quizaccess_quizproctoring-video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    width: 240px;
+}
+button.proctoringimage {
+    margin-left: 1.5%;
+    margin-bottom: 0.4%;
+}
+button.proctoridentity {
+    margin-left: 1.5%;
+    margin-bottom: 0.4%;
+}
+.imgheading {
+    font-size: 1.171875rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.quizaccess_quizproctoring {
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 240px;
+}
+.modalvideo {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    right: 0%;
+}
+
+/* Modal Content */
+.modalvideo-content {
+    margin: auto;
+    width: 50%;
+}
+
+#loading {
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    height: 9%;
+    width: 5%;
+    z-index: 9999999;
+}
+
+/* Hide video on mobile devices */
+@media only screen and (max-width: 767px) {
+    #page-mod-quiz-attempt .quizaccess_quizproctoring-video {
+        display: none;
+    }
+}
+
+/* Show video on larger screens */
+@media only screen and (min-width: 768px) {
+    #page-mod-quiz-attempt .quizaccess_quizproctoring-video {
+        display: block; /* Or use display: inline; or display: inline-block; as per your layout */
+    }
+}
